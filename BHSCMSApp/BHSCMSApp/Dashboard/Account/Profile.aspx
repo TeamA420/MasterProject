@@ -3,9 +3,10 @@
 
 
     
-					<h1>
-						
-					</h1>
+					   <div class="row" style="background-color:white; width:100%">
+          <div class="col-md-12">
+              <br />
+
 					
 						<fieldset>
 							<legend>Edit Your Profile</legend>
@@ -73,9 +74,13 @@
 
 
 
+   
+                        <br />
+                   </div>
+       
+         </div>
+     <br />
+    <br />   
     <br />
-    <br />
-    <br />
-
-
+    <br /> 
 </asp:Content>

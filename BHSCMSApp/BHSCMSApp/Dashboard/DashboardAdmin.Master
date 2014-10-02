@@ -15,7 +15,26 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <script src="../Scripts/jquery-1.10.2.js"></script>
+    <link href="../Content/menubar.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
+                $('#cssmenu #menu-button').on('click', function () {
+                    var menu = $(this).next('ul');
+                    if (menu.hasClass('open')) {
+                        menu.removeClass('open');
+                    }
+                    else {
+                        menu.addClass('open');
+                    }
+                });
+            });
+        })(jQuery);
 
+    </script>
 </head>
 <body>
 
@@ -47,91 +66,68 @@
             </Scripts>
         </asp:ScriptManager>
 
-
-
-
-
-
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-              
-          </button>
-          <img src="/img/logo.png" width="230" height="65"/>
+        <div id="headerpage">
+            <img src="/img/BHLOUTM-P.png" width=25%/>
+            <My:UserInfoBoxControl runat="server" ID="UserInfoBoxControl" />
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/Dashboard/DashboardAdmin"><img src="/img/dashboard.png" width="25" height="25"/> Dashboard</a></li>
-            <%--<li><a href="#">Settings</a></li>--%>
-            <li><a href="/Dashboard/Account/Profile.aspx">My Profile</a></li>
-            <%--<li><a href="#">Help</a></li>--%>
-          </ul>
-          <%--<form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search..."/>
-          </form>--%>
-        </div>
-      </div>
-    </div>
+        <br />
+       
+       
+               <div id='cssmenu'>
+                <ul>
+                   <li><a href='/Dashboard/DashboardAdmin'><span>Dashboard</span></a></li>
+                   <li class='active has-sub'><a href='#'><span>Manage Users</span></a>
+                      <ul>
+                         <li><a href='/Dashboard/Account/ManageEmployees'><span>Employees</span></a></li>
+                         <li><a href='/Dashboard/Account/ManageVendors'><span>Vendors</span></a>                            
+                         </li>
+                      </ul>
+                   </li>
+                    <li class='active has-sub'><a href='#'><span>Manage RFI</span></a>
+                      <ul>
+                         <li><a href='/Dashboard/RFI/NewRFI'><span>New RFI</span></a></li>
+                         <li><a href='/Dashboard/RFI/ViewRFI'><span>View RFIs</span></a>                            
+                         </li>
+                      </ul>
+                   </li>
+                    <li class='active has-sub'><a href='#'><span>Manage RFP</span></a>
+                      <ul>
+                         <li><a href='/Dashboard/RFP/NewRFP'><span>New RFP</span></a></li>
+                         <li><a href='/Dashboard/RFP/ViewRFP'><span>View RFPs</span></a>                            
+                         </li>
+                      </ul>
+                   </li>
+                    <li class='active has-sub'><a href='#'><span>Manage Contracts</span></a>
+                      <ul>
+                         <li><a href='/Dashboard/Contract/NewContract'><span>New Contract</span></a></li>
+                         <li><a href='/Dashboard/Contract/ViewContracts'><span>View Contracts</span></a>                            
+                         </li>
+                      </ul>
+                   </li>         
+                    <li><a href="/Dashboard/Account/Profile.aspx"><span>User Account</span></a></li>                
+                </ul>
 
-        <My:UserInfoBoxControl runat="server" ID="UserInfoBoxControl" />
-       <br />
-       <br />
-       <br />
-       <br />
+                   
+                </div>
+
+
+
+
+
+
+        
+
+     
 
         <div class="container body-content">
 
-            <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">           
-                         
-              <li class="dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Manage Users <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="/Dashboard/Account/ManageEmployees">Employees</a></li>
-                    <li><a href="/Dashboard/Account/ManageVendors">Vendors</a></li>                    
-                </ul>
-               </li>
-
-               <li class="dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Manage RFI<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="/ManageEmployees">Create New RFI</a></li>
-                    <li><a href="ManageVendors">View List</a></li>                             
-                </ul>
-               </li>
-
-              <li class="dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Manage RFP<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="ManageEmployees">Create New RFP</a></li>
-                    <li><a href="ManageVendors">View List</a></li>                             
-                </ul>
-               </li>
-
-                <li class="dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Manage Contracts<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="ManageEmployees">Create New Contract</a></li>
-                    <li><a href="ManageVendors">View Contracts List</a></li>                             
-                </ul>
-               </li>
-
-             
-             
-            <li><a href="#">Reports</a></li>
-            
-             
-          </ul>
-         
-        </div>
-        <div class="col-sm-9 main">
-
+       <div class="row" style="width:100%">
+        
+       
+            <br />
+            <br />
+            <br />
+            <br />
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
 
         
@@ -139,7 +135,7 @@
 
 
           
-        </div>
+       
       </div>
 
 

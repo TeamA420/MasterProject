@@ -1,11 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dashboard/DashboardAdmin.Master" AutoEventWireup="true" CodeBehind="ManageVendors.aspx.cs" Inherits="BHSCMSApp.Dashboard.ManageVendors" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
+       <div class="row" style="background-color:white; width:100%; height:320px">
+          <div class="col-md-12">
+              <br />
     
 
-      <h3>List of vendors registered in the system:</h3>
+      <h4>List of vendors registered in the system:</h4>
     <hr />
-            <div style="width: 90%; margin-right: 5%; margin-left: 5%; text-align: center">
        
            
             <%--<p style="text-align: center;">Demo by Priya Darshini - Tutorial @ <a href="http://www.programming-free.com/2013/09/gridview-crud-bootstrap-modal-popup.html">Programmingfree</a></p>--%>
@@ -39,5 +40,12 @@
 
 
             </div>
-
+              
+                </div>
+       
+         </div>
+     <br />
+    <br />   
+    <br />
+    <br /> 
 </asp:Content>

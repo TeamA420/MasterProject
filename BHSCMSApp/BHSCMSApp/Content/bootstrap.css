@@ -63,7 +63,8 @@ body {
 
 .userControl
 {
-    margin-top:20px;
+    margin-top:0px;
+    margin-bottom:4px;
     margin-right:10px;
     color: #808184;
 }
@@ -314,7 +315,7 @@ table {
 }
 
 html {
-  font-size: 60.5%;
+  font-size: 62.5%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   height: 100%;
 }
@@ -324,7 +325,7 @@ body {
   font-size: 16px;
   line-height: 1.428571429;
   color: #2E2E1F;
-  background-color: whitesmoke;
+  background-color:#EEEEEE;
   
   /*background: url("/img/green1.jpg") no-repeat center center fixed;*/  
   /*background-size: 100% 100%;
@@ -357,7 +358,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #009dbd;
+  
   text-decoration: underline;
 }
 
@@ -539,19 +540,19 @@ h2,
 h3,
 .h3 {
   font-size: 24px;
-  color: #4C1872;
+  color: #35352B;
   font-weight: 900;
 }
 h5,
 .h5 {
   font-size: 20px;
-  color: #4C1872;
+  color: #35352B;
   font-weight: 900;
 }
 h4,
 .h4 {
   font-size: 18px;
-  color: #4C1872;
+ color: #35352B;
 }
 
 h5,
@@ -782,7 +783,7 @@ pre code {
 }
 
 .container {
-    
+    margin-top:0px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -810,9 +811,8 @@ pre code {
 }
 
 .row {
-  margin-right: 5px;
-  margin-left: 5px;
-  margin-bottom: 35px;
+  margin: 0 auto;
+ 
 }
 
 .row:before,
@@ -1455,7 +1455,7 @@ th {
   padding: 8px;
   line-height: 1.428571429;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+  /*border-top: 1px solid #dddddd;*/
 }
 
 .table thead > tr > th {
@@ -2287,8 +2287,8 @@ fieldset[disabled] .btn-success.active {
 
 .btn-info {
   color: #ffffff;
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  background-color: #40B3DF;
+  border-color: #40B3DF;
 }
 
 .btn-info:hover,
@@ -4977,7 +4977,7 @@ a.list-group-item.active > .badge,
   font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: transparent;
 }
 
 .jumbotron h1 {
@@ -4995,11 +4995,11 @@ a.list-group-item.active > .badge,
 
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 40px;
-    padding-bottom: 48px;
-    width:80%;
-    height:150px;
-    background-image: url('/img/BHLOUTM.jpg');
+    padding-top: 20px;
+    padding-bottom: 28px;
+    width:90%;
+    /*height:150px;*/
+    
      background-size: 100% 100%;
   background-repeat: no-repeat;
     
@@ -5455,11 +5455,16 @@ a.list-group-item:focus {
 
 .panel-footer {
   padding: 10px 15px;
-  background-image: url('/img/footer2.png');
-  border-top: 1px solid black;
+  /*background-image: url('/img/footer2.png');*/
+  background-color: #CBE074;  
+  font-family: 'PT Sans', sans-serif;
+  /*border-top: 1px solid black;*/
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
   text-align:center;
+  color: white;
+  
+  
 }
 
 .panel-group .panel {
@@ -5482,6 +5487,7 @@ a.list-group-item:focus {
 
 .panel-group .panel-footer {
   border-top: 0;
+  
 }
 
 .panel-group .panel-footer + .panel-collapse .panel-body {
@@ -5542,7 +5548,11 @@ a.list-group-item:focus {
   border-bottom-color: #d6e9c6;
 }
 
-
+.footercontainer a
+{
+    
+    color:white;
+}
 
 .footercontainer {
     
@@ -5550,7 +5560,8 @@ a.list-group-item:focus {
   bottom:0;
   max-width: 680px;
   padding: 0 15px;
-   
+  
+    font-family:'PT Sans', sans-serif;
 }
 .footercontainer .credit {
   margin: auto 0;
@@ -5563,7 +5574,7 @@ a.list-group-item:focus {
    margin: 0 auto;
   height: 4em;
   position: absolute;
-    
+   
    margin-bottom: 0px;
     /*left: 50%;*/
     /*margin-left: -300px;*/ /* half size of footer */
@@ -5576,6 +5587,7 @@ a.list-group-item:focus {
   margin-left:0 ;
   margin-right: 0 ;
   height: 4em;
+  color:white;
 }
 #wrap {
   min-height: 100%;
@@ -6106,6 +6118,10 @@ body.modal-open,
   width: 100%;
   overflow: hidden;
 }
+
+
+
+
 
 .carousel-inner > .item {
   position: relative;

@@ -1,17 +1,23 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dashboard/DashboardAdmin.Master" AutoEventWireup="true" CodeBehind="EditEmployee.aspx.cs" Inherits="BHSCMSApp.Dashboard.Register.EditEmployee" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    
+      <div class="row" style="background-color:white; width:100%">
+          <div class="col-md-12">
+              <br />
 
-    <br />
-    <h5>Edit Employee Information:</h5>
-    <table class="table" style="border:none; border-radius:4px">
+
+
+    
+    <h4 style="margin-left:20px">Edit Employee Information:</h4>
+    <table class="table" style="border:none; outline:none; margin-left:20px; border-radius:4px">
                                 <tr>
                                     <td>EmpID:                                         
                             <asp:TextBox ReadOnly="true" ID="lblEmpID" runat="server" CssClass="form-control"></asp:TextBox>
                                     </td>
                                 </tr>
                                  <tr>
-                                    <td>
-                            <asp:TextBox ID="lblUserID" runat="server" ReadOnly="true" Visible="false" CssClass="form-control"></asp:TextBox>
+                                    <td>UserID:
+                            <asp:TextBox ID="lblUserID" runat="server" ReadOnly="true" Visible="true" CssClass="form-control"></asp:TextBox>
                                     </td>
                                 </tr>
 
@@ -63,15 +69,12 @@
 
 
              
-   
-    <br />
+                        <br />
+                   </div>
+       
+         </div>
      <br />
+    <br />   
     <br />
-
-
-
-
-
-   
-
+    <br /> 
 </asp:Content>

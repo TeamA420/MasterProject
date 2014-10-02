@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dashboard/DashboardAdmin.Master" AutoEventWireup="true" CodeBehind="EditVendor.aspx.cs" Inherits="BHSCMSApp.Dashboard.Register.EditVendor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="row">
+      <div class="row" style="background-color:white; width:100%">
         <div class="col-md-6">
             <h5>Vendor Information</h5>
-                 <table>
+                <table class="table" style="border:none; outline:none; margin-left:20px; border-radius:4px">
                                <%-- <tr class="info">
                                     <td>VendorID: 
                             <asp:Label ID="lblVendorID" runat="server" ></asp:Label>
@@ -95,21 +95,21 @@
                                 <asp:TextBox ID="txtSecEmail" runat="server" CssClass="form-control"></asp:TextBox>
                                     </td>
                                 </tr>
+                         
                           <tr>
-                              <td>  <asp:Button ID="btnAdd" runat="server" Text="Save Changes" CssClass="btn btn-info" OnClick="btnAdd_Click" /></td>
+                              <td><br />  <asp:Button ID="btnAdd" runat="server" Text="Save Changes" CssClass="btn btn-info" OnClick="btnAdd_Click" /></td>
                           </tr>
                     </table>
 
-</div>
 
-
-
-
-        </div>
-
+                        <br />
+                   </div>
+       
+         </div>
+     <br />
+    <br />   
     <br />
-    <br />
-    
+    <br /> 
     
          
 

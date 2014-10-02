@@ -1,7 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dashboard/DashboardAdmin.Master" AutoEventWireup="true" CodeBehind="DetailsVendor.aspx.cs" Inherits="BHSCMSApp.Dashboard.Register.DetailsVendor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-       <asp:DetailsView ID="DetailsView1" runat="server" CssClass="table table-bordered table-hover" BackColor="White" ForeColor="Black" FieldHeaderStyle-Wrap="true" FieldHeaderStyle-Font-Bold="true" FieldHeaderStyle-BackColor="#DFD4F4" FieldHeaderStyle-ForeColor="Black" BorderStyle="Groove" AutoGenerateRows="False">
+
+     <div class="row" style="background-color:white; width:100%">
+          <div class="col-md-12">
+              <br />
+
+
+    <h5>Vendor Information:</h5>
+
+       <asp:DetailsView ID="DetailsView1" runat="server" CssClass="table table-bordered table-hover" Width="70%" BackColor="White" ForeColor="Black" FieldHeaderStyle-Wrap="true" FieldHeaderStyle-Font-Bold="true" FieldHeaderStyle-BackColor="#EEEEEE" FieldHeaderStyle-ForeColor="Black" BorderStyle="Groove" AutoGenerateRows="False">
                                 <Fields>                                    
                                     
                                     <asp:BoundField DataField="VendorID" HeaderText="VendorID"/>
@@ -26,8 +34,15 @@
                                     
                                 </Fields>
                             </asp:DetailsView>
+              <br />
+                        <br />
+                   </div>
+       
+         </div>
+     <br />
+    <br />   
+    <br />
+    <br /> 
 
-    <br />
-    <br />
-    <br />
+  
 </asp:Content>

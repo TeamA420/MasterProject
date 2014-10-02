@@ -3,11 +3,17 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <br />
     <br />
-    <h3 class="headers">Contact Us</h3> 
-
     
 
-        <table>
+    <div class="row">
+
+     <div class="col-md-4"  style="background-color:white; border-radius:4px; height:600px">
+         <h3 class="headers">Contact Us</h3> 
+          <hr />
+         <p>Please complete the form below.</p>
+         
+         <br />
+        <table style="margin-left:20px">
             <!-- Name -->
             <tr>
                 <td >
@@ -73,19 +79,47 @@
                 </td>
             </tr>
         </table>
-    <hr />
-    <h5>Address:</h5>
-    <address>
-        Baptist Health<br />
-        2701 Eastpoint Parkway <br />
-        Our main phone number: (502) 896-5000
+         <br />
+         <br />
+         </div>
+
+
+        <div class="col-md-4"  style="background-color:white; border-radius:4px; height:600px">
+                  <br />
+    <h4>Were are we?</h4>
+                 <br />
+                 <p>We are located in:</p>
+                 <address>
+        
+        4000 Kresge Way <br />
+        Louisville, KY 40207<br />
+        
     </address>
-     <h5>Email:</h5>
+<iframe style="margin-right:30px" width="400" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Baptist+Health+Louisville,+Kresge+Way,+Louisville,+KY&amp;aq=0&amp;oq=baptist+&amp;sll=38.214274,-85.760586&amp;sspn=0.020231,0.052314&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=38.238477,-85.640514&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Baptist+Health+Louisville,+Kresge+Way,+Louisville,+KY&amp;aq=0&amp;oq=baptist+&amp;sll=38.214274,-85.760586&amp;sspn=0.020231,0.052314&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=38.238477,-85.640514&amp;spn=0.006295,0.006295&amp;t=m" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+    </div>
+             
+
+
+
+
+
+
+
+         <div class="col-md-4"  style="background-color:white; border-radius:4px; height:600px">
+   
+    <br />
+    
+     <h5>Email Address:</h5>
     <address>
         <strong>Web Master:</strong>   <a href="mailto:annia.martinez@louisville.edu">webmaster@baptisthealth.com</a><br />
-        <strong>Support:</strong> <a href="mailto:Marketing@example.com">support@baptisthealth.com</a>
+        <strong>Support:</strong> <a href="mailto:Marketing@example.com">support@baptisthealth.com</a><br />
+        Our main phone number: (502) 896-5000
     </address>
+             </div>
 
 
+             
+             
 
+    </div>
 </asp:Content>

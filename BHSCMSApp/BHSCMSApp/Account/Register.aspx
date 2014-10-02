@@ -5,15 +5,14 @@
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />
     </p>
-    <br />
-    
+       
     <div class="form-horizontal">
         <hr />
         <%-- <asp:ValidationSummary runat="server" CssClass="text-danger" />--%>
-        <div class="row">
+        <div class="row" style="background-color:white">
 
         <div class="col-md-6"><%--ends first column--%> 
-
+            <br />
         <h4>Enter Company Information</h4>        
        
         <br />
@@ -229,7 +228,8 @@
         
        </div><%--ends first column--%>
 
-        <div class="col-md-6"><%--starts second column--%>         
+        <div class="col-md-6"><%--starts second column--%>   
+            <br />      
         <h4>Enter Account Login Information</h4>
          <br />
         <div class="form-group">
@@ -293,7 +293,7 @@
         </div>
         <div class="form-group">
             <div class="col-md-offset-4 col-md-8">
-                <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-default" />
+                <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-info" />
             </div>
         </div>
 
@@ -301,8 +301,7 @@
              <br />
              <br />
             
-            <br />
-             <br />
+            
              <br />
             
             <br />
@@ -314,5 +313,10 @@
     </div><%--ends second column--%>
     </div><%--ends row column--%>
     </div><%--ends form column--%>
+    <br />
+             <br />
+             <br />
+     <br />
+             <br />
 </asp:Content>
 

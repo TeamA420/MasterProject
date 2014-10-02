@@ -157,11 +157,16 @@
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\menubar.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Controls\UserInfoBoxControl.ascx" />
     <Content Include="Dashboard\Account\Profile.aspx" />
     <Content Include="Dashboard\Account\VendorProfile.aspx" />
     <Content Include="Dashboard\DashboardVendor.aspx" />
+    <Content Include="img\baptisthealthrichmond.jpg" />
+    <Content Include="img\BHLOUTM-P.png" />
+    <Content Include="img\business.jpg" />
+    <Content Include="img\contract.jpg" />
     <Content Include="img\dashboard.png" />
     <Content Include="Dashboard\DashboardAdmin.aspx" />
     <Content Include="Dashboard\Account\ManageEmployees.aspx" />
