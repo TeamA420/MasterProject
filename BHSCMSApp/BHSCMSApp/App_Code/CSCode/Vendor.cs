@@ -65,7 +65,7 @@ namespace BHSCMSApp
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string insertQry = "Insert into [BHSCMS].[dbo].[VendorTable] (CompanyName, UserID, PhoneNumber, FaxNumber,AddressLine1,AddressLine2,City,State,ZipCode,Status,RegistrationDate,TaxID) values (@company, @userid, @phone, @fax, @address1, @address2, @city, @state, @zipcode, @status, @regDate, @taxid)";
+                    string insertQry = "Insert into [BHSCMS].[dbo].[VendorTable] (CompanyName, UserID, PhoneNumber, FaxNumber,AddressLine1,AddressLine2,City,State,ZipCode,StatusID,RegistrationDate,TaxID) values (@company, @userid, @phone, @fax, @address1, @address2, @city, @state, @zipcode, @status, @regDate, @taxid)";
                     SqlCommand command = new SqlCommand(insertQry, connection);
                     command.Parameters.AddWithValue("@company", company);
                     command.Parameters.AddWithValue("@userid", userid);
