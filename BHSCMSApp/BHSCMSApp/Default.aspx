@@ -1,9 +1,10 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="BHSCMSApp._Default" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <br />
-   <br />
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+  
+
+
     <div class="content">
     <div class="jumbotron">
 
@@ -18,19 +19,19 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="/img/baptisthealthrichmond.jpg" alt="..." width='100%' class="peopleCarouselImg">
+      <img src="/img/baptisthealthrichmond.jpg" alt="..." class="peopleCarouselImg" style="width: 100%;  height: 300px;  max-height: 300px;">
       <div class="carousel-caption">
           <h3></h3>
       </div>
     </div>
     <div class="item">
-      <img src="/img/business.jpg" alt="..." width='100%' class="peopleCarouselImg">
+      <img src="/img/business.jpg" alt="..." class="peopleCarouselImg" style="width: 100%;  height: 300px;  max-height: 300px;">
       <div class="carousel-caption">
           <h3></h3>
       </div>
     </div>
     <div class="item">
-        <img src="/img/contract.jpg" alt="..." width='100%' class="peopleCarouselImg">      
+        <img src="/img/contract.jpg" alt="..." class="peopleCarouselImg" style="width: 100%;  height: 300px;  max-height: 300px;">     
       <div class="carousel-caption">          
       </div>
     </div>
@@ -62,10 +63,10 @@
 
        
 
+        
 
-
-    <div class="row">
-        <div class="col-md-8"  style="background-color:white; border-radius:4px; height:300px; margin-left:5px">
+    <div class="row row-centered" style="margin: 0 auto">
+        <div class="col-md-6 col-centered">
             <br />
             <h4>Welcome to Baptist Health’s supply acquisition system</h4>
             <br />
@@ -77,21 +78,20 @@
             <p>Should you have any questions, please do not hesitate to contact us through our contact page. We appreciate your business and hope you enjoy the site. </p>
             
         </div>
-        <div class="col-md-1" >
-            
-        </div>
-        <div class="col-md-3" style="background-color:#CBE074; border-radius:4px; border:solid 4px; border-color:#A8CB17; margin-left:20px" >
-        <section id="loginForm">
-                <div class="form-horizontal">
-                    <h6>Enter credentials to access the system</h6>
-                    
+       
+        <div class="col-md-3 col-centered" style="background-color:white; border-radius:2px; border:solid 2px; border-color:#A8CB17" >
+        <section id="loginForm" >
+                <div class="form-horizontal" >
+                    <h4 style="text-align:left; width:250px; background-color:#A8CB17; padding:8px; color:white; margin-left:-30px">Access Portal</h4>
+                   
                       <asp:PlaceHolder runat="server" ID="ErrorMessage" Visible="false">
                         <p class="text-danger">
                             <asp:Literal runat="server" ID="FailureText" />
                         </p>
                     </asp:PlaceHolder>
                     <div class="form-group">
-                        <asp:Label runat="server" AssociatedControlID="UserName" CssClass="col-md-4 control-label">User name:</asp:Label>
+                        <asp:Label runat="server" AssociatedControlID="UserName" CssClass="col-md-4 control-label">Username:</asp:Label>
+                        <br />
                         <div class="col-md-8">
                             <asp:TextBox runat="server" ID="UserName" CssClass="form-control"/>
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName"
@@ -100,6 +100,7 @@
                     </div>
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="Password" CssClass="col-md-4 control-label">Password:</asp:Label>
+                        <br />
                         <div class="col-md-8">
                             <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="form-control" Text="Password" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="The password field is required." />
@@ -127,7 +128,7 @@
             </section>
 
              </div>
-          
+         
             <br />
              <br />
              <br />
@@ -145,6 +146,7 @@
        
     </div>
     </div>
+       
     <br />
      <br />
      <br />

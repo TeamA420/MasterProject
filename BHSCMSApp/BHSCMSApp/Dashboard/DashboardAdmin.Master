@@ -66,12 +66,11 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div id="headerpage">
-            <img src="/img/BHLOUTM-P.png" width=25%/>
+       <div id="headerpage">
+            <img src="/img/BHLOUTM-P.png" style="width:25%"/>
             <My:UserInfoBoxControl runat="server" ID="UserInfoBoxControl" />
         </div>
         <br />
-       
        
                <div id='cssmenu'>
                 <ul>
@@ -83,21 +82,21 @@
                          </li>
                       </ul>
                    </li>
-                    <li class='active has-sub'><a href='#'><span>Manage RFI</span></a>
+                    <li class='active has-sub'><a href='#'><span>RFI</span></a>
                       <ul>
                          <li><a href='/Dashboard/RFI/NewRFI'><span>New RFI</span></a></li>
                          <li><a href='/Dashboard/RFI/ViewRFI'><span>View RFIs</span></a>                            
                          </li>
                       </ul>
                    </li>
-                    <li class='active has-sub'><a href='#'><span>Manage RFP</span></a>
+                    <li class='active has-sub'><a href='#'><span>RFP</span></a>
                       <ul>
                          <li><a href='/Dashboard/RFP/NewRFP'><span>New RFP</span></a></li>
                          <li><a href='/Dashboard/RFP/ViewRFP'><span>View RFPs</span></a>                            
                          </li>
                       </ul>
                    </li>
-                    <li class='active has-sub'><a href='#'><span>Manage Contracts</span></a>
+                    <li class='active has-sub'><a href='#'><span>Contracts</span></a>
                       <ul>
                          <li><a href='/Dashboard/Contract/NewContract'><span>New Contract</span></a></li>
                          <li><a href='/Dashboard/Contract/ViewContracts'><span>View Contracts</span></a>                            
@@ -119,7 +118,7 @@
 
      
 
-        <div class="container body-content">
+        <div class="container body-content" style="float: none; margin: 0 auto; background-color:white">
 
        <div class="row" style="width:100%">
         

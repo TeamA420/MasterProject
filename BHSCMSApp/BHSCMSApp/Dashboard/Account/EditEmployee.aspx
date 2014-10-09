@@ -3,10 +3,7 @@
     
       <div class="row" style="background-color:white; width:100%">
           <div class="col-md-12">
-              <br />
-
-
-
+         
     
     <h4 style="margin-left:20px">Edit Employee Information:</h4>
     <table class="table" style="border:none; outline:none; margin-left:20px; border-radius:4px">

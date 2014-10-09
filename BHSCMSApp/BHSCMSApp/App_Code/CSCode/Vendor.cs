@@ -26,7 +26,7 @@ namespace BHSCMSApp
                 {
                     connection.Open();
 
-                    string updateQry = string.Format("update VendorTable set CompanyName=@company, PhoneNumber=@phone, FaxNumber=@fax, AddressLine1=@address1, AddressLine2=@address2, City=@city, State=@state, ZipCode=@zipcode, Status=@status, TaxID=@taxid where UserID={0}", userid);
+                    string updateQry = string.Format("update VendorTable set CompanyName=@company, PhoneNumber=@phone, FaxNumber=@fax, AddressLine1=@address1, AddressLine2=@address2, City=@city, State=@state, ZipCode=@zipcode, StatusID=@statusid, TaxID=@taxid where UserID={0}", userid);
 
                     SqlCommand updateCmd = new SqlCommand(updateQry, connection);
 
@@ -38,11 +38,10 @@ namespace BHSCMSApp
                     updateCmd.Parameters.AddWithValue("@city", city);
                     updateCmd.Parameters.AddWithValue("@state", state);
                     updateCmd.Parameters.AddWithValue("@zipcode", zipcode);
-                    updateCmd.Parameters.AddWithValue("@status", status);
+                    updateCmd.Parameters.AddWithValue("@statusid", status);
                     updateCmd.Parameters.AddWithValue("@taxid", taxid);
 
                     
-
                     updateCmd.ExecuteNonQuery();
                     connection.Close();
                 }

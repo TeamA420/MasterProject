@@ -7,11 +7,12 @@
     </p>
        
     <div class="form-horizontal">
-        <hr />
+        
         <%-- <asp:ValidationSummary runat="server" CssClass="text-danger" />--%>
-        <div class="row" style="background-color:white">
+       
+        <div class="row" style="margin: 0 auto">
 
-        <div class="col-md-6"><%--ends first column--%> 
+        <div class="col-md-6" ><%--ends first column--%> 
             <br />
         <h4>Enter Company Information</h4>        
        
@@ -228,7 +229,7 @@
         
        </div><%--ends first column--%>
 
-        <div class="col-md-6"><%--starts second column--%>   
+        <div class="col-md-6" ><%--starts second column--%>   
             <br />      
         <h4>Enter Account Login Information</h4>
          <br />
@@ -313,6 +314,7 @@
     </div><%--ends second column--%>
     </div><%--ends row column--%>
     </div><%--ends form column--%>
+    
     <br />
              <br />
              <br />

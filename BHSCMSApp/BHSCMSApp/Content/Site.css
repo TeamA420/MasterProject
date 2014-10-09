@@ -15,14 +15,14 @@ body {
     margin-top:10px;
     margin-left:10px;
     margin-right:10px;
- 
+   width:80%;
    
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
 input[type="text"],
 input[type="password"] {
-    max-width: 260px;
+    max-width: 300px;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -53,4 +53,17 @@ input[type="password"] {
 {
    
     float:right;
+}
+#loginhead 
+{
+    margin-top: 0px;
+margin-bottom: 4px;
+margin-right: 0px;
+color: #808184;
+
+
+}
+.align-center
+{
+     margin: 0 auto; 
 }

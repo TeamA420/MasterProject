@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BHSCMSApp;
 
 namespace BHSCMSApp.Controls
 {
@@ -15,7 +16,7 @@ namespace BHSCMSApp.Controls
         private static int roleid;
         private static int userID;
         private static string lastLogin;
-        SysUser u = new SysUser();
+        //static SysUser u = new SysUser();
 
         
 
@@ -24,63 +25,66 @@ namespace BHSCMSApp.Controls
             HyperLink logout = (HyperLink)FindControl("LogOut");
             logout.NavigateUrl = "~/Default.aspx";
 
-            UserName = Request.QueryString["u"];
-            RoleID = Convert.ToInt32(Request.QueryString["r"]);
-            UserID = u.GetUserIDbyUserName(UserName);
+            //Session["username"] = Request.QueryString["u"];
 
-            GetUserInfo();
+            //UserName =(string)Session["username"];
+           
+            
+            
+            //string firstName = (string)(Session["First"]);
+            //RoleID = Convert.ToInt32(Request.QueryString["r"]);
 
-           if(!IsPostBack)
-           {
-               GetUserInfo();
-           }
 
-        }
-        
-        public void GetUserInfo()
-        {
-            UserName = Request.QueryString["u"];
-            RoleID = Convert.ToInt32(Request.QueryString["r"]);
-            UserID = u.GetUserIDbyUserName(UserName);
 
-            LastLogin = u.LoginDate(UserID);
+            //UserName =(string)Session["username"];
+            //RoleID = Convert.ToInt32(Session["roleid"].ToString());
+            //Session.Clear();
 
-            switch (RoleID)
-            {
-                case 1:
-                    UserRole = "Administrator";
-                    break;
-                case 2:
-                    UserRole = "Employee";
-                    break;
-                case 3:
-                    UserRole = "Vendor";
-                    break;
-                default:
-                    UserRole = "Unknown";                    
-                    break;
-            }
+                //Page.Session["username"] = Server.HtmlEncode(userName);
+                //Page.Session["roleid"] = Server.HtmlEncode(roleid.ToString());
+
+                //UserID = u.GetUserIDbyUserName(UserName);
+                //GetUserInfo();
+
+                //if(Page.IsPostBack)
+                //{
+
+                //}
 
         }
+        //Sets the role name property 
+        //public void GetUserInfo()
+        //{
+        //    //UserName = HttpContext.Current.Session["username"].ToString();
+        //    //RoleID = Convert.ToInt32(HttpContext.Current.Session["roleid"].ToString());
+        //    //UserID = u.GetUserIDbyUserName(UserName);
+
+        //    //LastLogin = u.LoginDate(UserID);
+
+        //    switch (RoleID)
+        //    {
+        //        case 1:
+        //            UserRole = "Administrator";
+        //            break;
+        //        case 2:
+        //            UserRole = "Employee";
+        //            break;
+        //        case 3:
+        //            UserRole = "Vendor";
+        //            break;
+        //        default:
+        //            UserRole = "Unknown";                    
+        //            break;
+        //    }
+
+        //}
 
         public string UserName
         {                    
             get { return userName; }
             set { userName = value; }
         }
-
-
-        //public string UserName
-        //{
-        //    get
-        //    {
-        //        if (ViewState["u"] == null)
-        //            return int.MinValue.ToString();
-        //        else
-        //            return (string)ViewState["u"];
-        //    }
-        //    set { ViewState["u"] = value; }
-        //}
+            
 
         public int UserID
         {
@@ -91,14 +95,8 @@ namespace BHSCMSApp.Controls
 
         public int RoleID
         {
-            get
-            {
-                if (ViewState["roleid"] == null)
-                    return int.MinValue;
-                else
-                    return (int)ViewState["roleid"];
-            }
-            set { ViewState["roleid"] = value; }
+            get { return roleid; }
+            set { roleid = value; }
         }
 
         public string UserRole

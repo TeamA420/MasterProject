@@ -58,10 +58,15 @@
                                     </td>
                                 </tr>
                                  <tr>
-                                    <td>Status: 
-                                <asp:TextBox ID="txtStatus" runat="server" CssClass="form-control"></asp:TextBox>
+                                    <td>Status : 
+                                        <asp:DropDownList ID="ddstatus" runat="server" CssClass="form-control" Width="25%">
+                                            <asp:ListItem>Approved</asp:ListItem>
+                                            <asp:ListItem>Pending</asp:ListItem>
+                                             <asp:ListItem>Disapproved</asp:ListItem>
+                                             <asp:ListItem>Sanctioned</asp:ListItem>
+                                        </asp:DropDownList>                                
                                     </td>
-                                </tr> 
+                                </tr>
                                  <tr>
                                     <td>TaxID : 
                                 <asp:TextBox ID="txtTaxID" runat="server" CssClass="form-control"></asp:TextBox>

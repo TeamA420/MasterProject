@@ -43,6 +43,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  
 }
 #cssmenu ul li ul {
   position: absolute;
@@ -91,6 +92,7 @@
 #cssmenu.align-right ul li ul li.has-sub:before {
   right: auto;
   left: 15px;
+  
   border-left-color: transparent;
   border-right-color: #ffffff;
   background-color: #A8CB17;
@@ -101,6 +103,7 @@
   text-transform: none;
   color: #000000;
   letter-spacing: 0;
+   background-color:#F4F5ED;
   display: block;
   width: 170px;
   padding: 11px 10px 11px 20px;
@@ -108,10 +111,13 @@
 #cssmenu ul li ul li:hover > a,
 #cssmenu ul li ul li.active > a {
   color: #40B3DF;
+   background-color:#F4F5ED;
 }
 #cssmenu ul li ul li:hover:after,
 #cssmenu ul li ul li.active:after {
-  background: #EBEBE6;
+  background: #F4F5ED;
+
+  
 }
 #cssmenu ul li ul li:hover > ul {
   left: 100%;
@@ -171,6 +177,7 @@
   display: block;
   content: "";
   background: #ffffff;
+  
   height: 12px;
   width: 12px;
   position: absolute;
@@ -212,6 +219,7 @@
 #cssmenu > ul > li:hover > a:after,
 #cssmenu > ul > li.active > a:after {
   background: #000000;
+  
 }
 #cssmenu > ul > li:hover > a:before,
 #cssmenu > ul > li.active > a:before {
@@ -250,6 +258,7 @@
     -ms-transition: max-height 0.35s ease-out;
     -o-transition: max-height 0.35s ease-out;
     transition: max-height 0.35s ease-out;
+    
   }
   #cssmenu > ul > li > ul {
     width: 100%;
@@ -281,6 +290,7 @@
   #cssmenu > ul.open {
     max-height: 1000px;
     border-top: 1px solid rgba(110, 110, 110, 0.25);
+   
   }
   #cssmenu ul {
     width: 100%;
@@ -295,6 +305,7 @@
     box-sizing: border-box;
     width: 100%;
     padding: 12px 20px;
+
   }
   #cssmenu ul > li:after {
     display: none;
@@ -343,7 +354,7 @@
     font-size: 14px;
     letter-spacing: 1px;
     color: #ffffff;
-    cursor: pointer;
+    cursor:pointer;
   }
   #cssmenu #menu-button:after {
     display: block;

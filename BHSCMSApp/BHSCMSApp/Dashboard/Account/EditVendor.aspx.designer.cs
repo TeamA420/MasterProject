@@ -85,13 +85,13 @@ namespace BHSCMSApp.Dashboard.Register {
         protected global::System.Web.UI.WebControls.TextBox txtZipCode;
         
         /// <summary>
-        /// txtStatus control.
+        /// ddstatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtStatus;
+        protected global::System.Web.UI.WebControls.DropDownList ddstatus;
         
         /// <summary>
         /// txtTaxID control.

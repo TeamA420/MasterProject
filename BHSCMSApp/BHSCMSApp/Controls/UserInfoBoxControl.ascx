@@ -2,7 +2,7 @@
 
 <div style="float:right; text-align:right" class="userControl">
    
-    <b style="color:#17649A">Welcome back <%= this.UserName %>!!!</b>
+    <asp:label runat="server" style="color:#17649A; font-weight:bold">Welcome back <%= this.UserName %>!!!</asp:label>
 
 <br />
 <b style="font-size:small">You are logged in as <%=this.UserRole %></b>

@@ -780,6 +780,7 @@ pre code {
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
+
 }
 
 .container {
@@ -788,6 +789,9 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+ box-shadow:
+		 10px 0px 10px -7px rgba(0,0,0,0.5),
+		 -10px 0px 10px -7px rgba(0,0,0,0.5);
 }
 
 .container:before,
@@ -2022,9 +2026,10 @@ textarea.input-lg {
 
 @media (min-width: 768px) {
   .form-horizontal .control-label {
-    text-align: right;
+    text-align:left;
     font-size:small;
-    font-family: Arial;
+    font-family: 'Trebuchet MS';
+    text-transform:uppercase;
   }
 }
 
@@ -5572,7 +5577,7 @@ a.list-group-item:focus {
    
     width: 100%;
    margin: 0 auto;
-  height: 4em;
+  height: 6em;
   position: absolute;
    
    margin-bottom: 0px;

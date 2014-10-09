@@ -68,7 +68,7 @@
         </asp:ScriptManager>
 
          <div id="headerpage">
-            <img src="/img/BHLOUTM-P.png" width=25%/>
+            <img src="/img/BHLOUTM-P.png" style="width:25%"/>
             <My:UserInfoBoxControl runat="server" ID="UserInfoBoxControl" />
         </div>
         <br />
@@ -91,16 +91,12 @@
                     <li><a href="/Dashboard/Account/VendorProfile.aspx"><span>User Account</span></a></li>                
                 </ul>
                 </div>
+    <div class="container body-content" style="float: none; margin: 0 auto; background-color:white;">
 
-        <div class="container body-content">
-
-             <div class="row" style="width:100%">
+       <div class="row" style="width:100%">
         
        
-            <br />
-            <br />
-            <br />
-            <br />
+         
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
 
         

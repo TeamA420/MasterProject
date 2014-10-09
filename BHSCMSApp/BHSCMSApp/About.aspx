@@ -2,10 +2,9 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <%--<h2><%: Title %>.</h2>--%>
-    <br />
-    <br />
+  
     <div class="row" style="background-color:white">
-    <div class="col-md-9">
+    <div class="col-md-9" style="height:450px">
     <h3>About Us</h3>
     <p>Founded in 1924, Baptist Health has been bringing advanced medical technology, modern facilities, and many of the region's most prominent physicians and medical professionals to the cities and communities of Kentucky for almost 90 years.
     </p>

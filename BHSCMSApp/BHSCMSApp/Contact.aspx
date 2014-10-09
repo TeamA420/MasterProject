@@ -1,13 +1,11 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="BHSCMSApp.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <br />
-    <br />
-    
+     
 
     <div class="row">
 
-     <div class="col-md-4"  style="background-color:white; border-radius:4px; height:600px">
+     <div class="col-md-4"  style="height:600px">
          <h3 class="headers">Contact Us</h3> 
           <hr />
          <p>Please complete the form below.</p>
@@ -84,7 +82,7 @@
          </div>
 
 
-        <div class="col-md-4"  style="background-color:white; border-radius:4px; height:600px">
+        <div class="col-md-4"  style="height:600px">
                   <br />
     <h4>Were are we?</h4>
                  <br />
@@ -105,7 +103,7 @@
 
 
 
-         <div class="col-md-4"  style="background-color:white; border-radius:4px; height:600px">
+         <div class="col-md-4"  style="height:600px">
    
     <br />
     

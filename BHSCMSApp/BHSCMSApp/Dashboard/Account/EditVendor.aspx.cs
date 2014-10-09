@@ -15,22 +15,22 @@ namespace BHSCMSApp.Dashboard.Register
     {
         //declaring variables
         #region
-        private int _userID;
-        private string _company;
-        private string _phone;
-        private string _fax;
-        private string _address1;
-        private string _address2;
-        private string _city;
-        private string _state;
-        private string _zipcode;
-        private int _status;
-        private int _taxid;
-        private string _username;
-        private string _password;
-        private string _priEmail;
-        private string _secEmail;
-
+        public int _userID;
+        public string _company;
+        public string _phone;
+        public string _fax;
+        public string _address1;
+        public string _address2;
+        public string _city;
+        public string _state;
+        public string _zipcode;
+        public int _status;
+        public int _taxid;
+        public string _username;
+        public string _password;
+        public string _priEmail;
+        public string _secEmail;
+        public Vendor v = new Vendor();
         #endregion
        
 
@@ -73,7 +73,7 @@ namespace BHSCMSApp.Dashboard.Register
                     this.txtCity.Text = reader["City"].ToString();
                     this.txtState.Text = reader["State"].ToString();
                     this.txtZipCode.Text = reader["ZipCode"].ToString();
-                    this.txtStatus.Text = reader["Status"].ToString();
+                    this.ddstatus.SelectedIndex = (Convert.ToInt32(reader["StatusID"])-1);
                     this.txtTaxID.Text = reader["TaxID"].ToString();
                     this.txtUsername.Text = reader["UserName"].ToString();
                     this.txtPassword.Text = reader["Password"].ToString();
@@ -102,19 +102,19 @@ namespace BHSCMSApp.Dashboard.Register
             _address2 = txtAddress2.Text;
             _city = txtCity.Text;
             _state = txtState.Text;
-            _zipcode = txtZipCode.Text;
-            _status = Convert.ToInt32(txtStatus.Text);
+            _zipcode = this.txtZipCode.Text;
+            _status = (ddstatus.SelectedIndex)+1;
             _taxid = Convert.ToInt32(txtTaxID.Text);
             _username = txtUsername.Text;
             _password = txtPassword.Text;
             _priEmail = txtPriEmail.Text;
             _secEmail = txtSecEmail.Text;
             #endregion
-
-            Vendor v = new Vendor();
+                        
             v.UpdateVendor(_userID, _company, _phone, _fax, _address1, _address2, _city, _state, _zipcode, _status, _taxid);
             v.UpdateUser(txtUsername.Text, txtPassword.Text, txtPriEmail.Text, txtSecEmail.Text, 3, _userID);
-            Page.Response.Redirect("~/Dashboard/ManageVendors.aspx");
+            v = null;
+            Page.Response.Redirect("ManageVendors.aspx");
         }
 
        

@@ -3,10 +3,7 @@
 
       <div class="row" style="background-color:white; width:100%; height:450px">
           <div class="col-md-12">
-              <br />
-
-
-    <h4>Employee Information:</h4>
+      <h4>Employee Information:</h4>
      
                             <asp:DetailsView ID="DetailsView1" runat="server" CssClass="table table-bordered table-hover" BackColor="White" ForeColor="Black" Width='70%' FieldHeaderStyle-Wrap="false" FieldHeaderStyle-Font-Bold="true"  FieldHeaderStyle-BackColor="#EEEEEE" FieldHeaderStyle-ForeColor="Black" BorderStyle="Groove" AutoGenerateRows="False">
                                 <Fields>                                    

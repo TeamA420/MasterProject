@@ -22,24 +22,28 @@ namespace BHSCMSApp
         {
 
         }
-      
 
-        //public SysUser(string userName, string password, string primaryEmail, string secondaryEmail, int roleID)
-        //{
-        //    UserName = userName;
-        //    Password = password;
-        //    PrimaryEmail = primaryEmail;
-        //    SecondaryEmail = secondaryEmail;
-        //    RoleID = roleID;
+        public SysUser (string username)
+        {
+            UserName = username;
+        }
 
-        //}
+        public SysUser(string userName, string password, string primaryEmail, string secondaryEmail, int roleID)
+        {
+            UserName = userName;
+            Password = password;
+            PrimaryEmail = primaryEmail;
+            SecondaryEmail = secondaryEmail;
+            RoleID = roleID;
+
+        }
 
 
-        //public string UserName { get; set; }
-        //public string Password { get; set; }
-        //public string PrimaryEmail { get; set; }
-        //public string SecondaryEmail { get; set; }
-        //public int RoleID { get; set; }
+        public string UserName { get; set; }
+        public string Password { get; set; }
+        public string PrimaryEmail { get; set; }
+        public string SecondaryEmail { get; set; }
+        public int RoleID { get; set; }
 
 
 
@@ -151,21 +155,28 @@ namespace BHSCMSApp
             int roleID = 0;
 
             string connectionString = GetConnectionString();
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            try
             {
-                connection.Open();
-
-                SqlCommand command = new SqlCommand(String.Format("Select RoleID from BHSCMS.dbo.SysUserTable Where UserName='{0}' and Password='{1}'", username, password), connection);
-
-                SqlDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    roleID = Convert.ToInt32(reader["RoleID"]);
-                }          
+                    connection.Open();
+
+                    SqlCommand command = new SqlCommand(String.Format("Select RoleID from BHSCMS.dbo.SysUserTable Where UserName='{0}' and Password='{1}'", username, password), connection);
+
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        roleID = Convert.ToInt32(reader["RoleID"]);
+                    }
+                }
             }
 
+            catch (Exception e)
+            {
+                //System.Console.Error.Write(e.Message);
+
+            }
             return roleID;
         }
 
