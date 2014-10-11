@@ -22,6 +22,15 @@ namespace BHSCMSApp.Dashboard.Register {
         protected global::System.Web.UI.WebControls.TextBox txtEmpID;
         
         /// <summary>
+        /// EmpIDValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator EmpIDValidate;
+        
+        /// <summary>
         /// ddrole control.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,15 @@ namespace BHSCMSApp.Dashboard.Register {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddrole;
+        
+        /// <summary>
+        /// RoleValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RoleValidate;
         
         /// <summary>
         /// txtLast control.
@@ -40,6 +58,15 @@ namespace BHSCMSApp.Dashboard.Register {
         protected global::System.Web.UI.WebControls.TextBox txtLast;
         
         /// <summary>
+        /// LastNameValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator LastNameValidate;
+        
+        /// <summary>
         /// txtFirst control.
         /// </summary>
         /// <remarks>
@@ -47,6 +74,15 @@ namespace BHSCMSApp.Dashboard.Register {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtFirst;
+        
+        /// <summary>
+        /// FirstNameValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator FirstNameValidate;
         
         /// <summary>
         /// txtUsername control.
@@ -58,6 +94,15 @@ namespace BHSCMSApp.Dashboard.Register {
         protected global::System.Web.UI.WebControls.TextBox txtUsername;
         
         /// <summary>
+        /// UserNameValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator UserNameValidate;
+        
+        /// <summary>
         /// txtPassword control.
         /// </summary>
         /// <remarks>
@@ -65,6 +110,15 @@ namespace BHSCMSApp.Dashboard.Register {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        
+        /// <summary>
+        /// passwordValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator passwordValidate;
         
         /// <summary>
         /// txtPriEmail control.
@@ -76,6 +130,15 @@ namespace BHSCMSApp.Dashboard.Register {
         protected global::System.Web.UI.WebControls.TextBox txtPriEmail;
         
         /// <summary>
+        /// PriEmailValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator PriEmailValidate;
+        
+        /// <summary>
         /// txtSecEmail control.
         /// </summary>
         /// <remarks>
@@ -83,6 +146,15 @@ namespace BHSCMSApp.Dashboard.Register {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSecEmail;
+        
+        /// <summary>
+        /// SecEmailValidate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator SecEmailValidate;
         
         /// <summary>
         /// btnAdd control.
