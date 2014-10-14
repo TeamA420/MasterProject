@@ -15,27 +15,26 @@
                         AutoGenerateColumns="false" AllowPaging="true" OnRowDataBound="GridView1_RowDataBound"
                         DataKeyNames="UserID" CssClass="table table-hover table-striped">
                         <Columns>
-                            <asp:TemplateField>
-                                <ItemTemplate>
-                                    <asp:HyperLink ID="DetailsLink" runat="server" Text="Details"></asp:HyperLink>
-                                </ItemTemplate>                               
-                            </asp:TemplateField>
-                            <asp:TemplateField>
-                                <ItemTemplate>                                     
-                                    <asp:HyperLink ID="EditLink" runat="server" Text="Edit"></asp:HyperLink>                                
-                                </ItemTemplate>
-                            </asp:TemplateField>     
-                            <asp:TemplateField>
-                                <ItemTemplate>                                     
-                                    <asp:HyperLink ID="DeleteLink" runat="server" Text="Delete"></asp:HyperLink>                                
-                                </ItemTemplate>
-                            </asp:TemplateField>                           
-                            
                             <asp:BoundField DataField="UserID" HeaderText="UserID" />
                             <asp:BoundField DataField="UserName" HeaderText="UserName" />
                             <asp:BoundField DataField="LastName" HeaderText="Last Name" />
                             <asp:BoundField DataField="FirstName" HeaderText="First Name" />
                             <asp:BoundField DataField="Name" HeaderText="Role" />
+                            <asp:TemplateField>
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="DetailsLink" runat="server" Text="Details" ForeColor="Blue"></asp:HyperLink>
+                                </ItemTemplate>                               
+                            </asp:TemplateField>
+                            <asp:TemplateField>
+                                <ItemTemplate>                                     
+                                    <asp:HyperLink ID="EditLink" runat="server" Text="Edit" ForeColor="Blue"></asp:HyperLink>                                
+                                </ItemTemplate>
+                            </asp:TemplateField>     
+                            <asp:TemplateField>
+                                <ItemTemplate>                                     
+                                    <asp:HyperLink ID="DeleteLink" runat="server" Text="Delete" ForeColor="Blue"></asp:HyperLink>                                
+                                </ItemTemplate>
+                            </asp:TemplateField>                           
                         </Columns>
                     </asp:GridView>
                     <asp:Button ID="btnAdd" runat="server" Text="Add New Employee" CssClass="btn btn-info" OnClick="btnAdd_Click" />

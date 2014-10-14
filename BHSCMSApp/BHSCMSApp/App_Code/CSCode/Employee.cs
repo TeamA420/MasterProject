@@ -40,7 +40,6 @@ namespace BHSCMSApp
 
                 command.ExecuteNonQuery();
                 connection.Close();
-                
 
             }
             

@@ -30,7 +30,7 @@ namespace BHSCMSApp.Dashboard
 
                 conn.Open();
 
-                string cmd = "Select U.UserID, U. UserName, E.LastName, E.FirstName, R.Name from BHSCMS.dbo.SysUserTable U join BHSCMS.dbo.RoleTable R on U.RoleID=R.RoleID join BHSCMS.dbo.EmployeeTable E on U.UserID=E.UserID where U.RoleID IN(1,2)";
+                string cmd = "Select U.UserID, U. UserName, E.LastName, E.FirstName, R.Name from BHSCMS.dbo.SysUserTable U join BHSCMS.dbo.RoleTable R on U.RoleID=R.ID join BHSCMS.dbo.EmployeeTable E on U.UserID=E.UserID where U.RoleID IN(1,2)";
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd, conn);
 
 
@@ -68,10 +68,7 @@ namespace BHSCMSApp.Dashboard
                 HyperLink edit = (HyperLink)e.Row.FindControl("EditLink");
                 edit.NavigateUrl = String.Format("/Dashboard/Account/EditEmployee.aspx?userid={0}", userID);//
 
-
-                
             }
         }
-
     }
 }
