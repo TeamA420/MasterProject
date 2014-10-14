@@ -31,7 +31,7 @@ namespace BHSCMSApp.Dashboard
 
                 conn.Open();
 
-                string cmd = "Select U.UserID, U.UserName, V.CompanyName, V.State, S.Status from BHSCMS.dbo.SysUserTable U join BHSCMS.dbo.VendorTable V on U.UserID=V.UserID inner join BHSCMS.dbo.StatusTable S on S.StatusID=V.StatusID Where U.RoleID=3";
+                string cmd = "Select * from BHSCMS.dbo.VendorTable V join BHSCMS.dbo.SysUserTable S ON V.UserID=S.UserID";
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd, conn);
 
 

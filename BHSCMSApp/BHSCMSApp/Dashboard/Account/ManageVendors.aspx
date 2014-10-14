@@ -30,7 +30,7 @@
                                                       
                             <asp:BoundField DataField="CompanyName" HeaderText="Company"/>
                             <asp:BoundField DataField="State" HeaderText="State"/>
-                            <asp:BoundField DataField="Status" HeaderText="Status"/>
+                            <asp:boundfield datafield="StatusID" headertext="Status"/>
                              <asp:BoundField DataField="UserID" HeaderText="UserID"/>
                             <asp:BoundField DataField="UserName" HeaderText="UserName"/>
                         </Columns>
@@ -43,7 +43,6 @@
               
                 </div>
        
-         </div>
      <br />
     <br />   
     <br />

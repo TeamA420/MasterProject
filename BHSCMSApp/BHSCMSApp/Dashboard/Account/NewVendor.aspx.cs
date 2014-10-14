@@ -16,7 +16,8 @@ namespace BHSCMSApp.Dashboard.Register
 
         protected void addButton_Click(object sender, EventArgs e)
         {
-            if (ValidVend.IsValid == true && ValidTaxID.IsValid == true)
+            if (ValidTaxID.IsValid == true)    
+                //ValidVend.IsValid == true &&
             {
 
                 Vendor vend = new Vendor();
@@ -28,7 +29,7 @@ namespace BHSCMSApp.Dashboard.Register
                 string fax = Fax.Text;
                 string address1 = PAddress.Text;
                 string address2 = BAddress.Text;
-                int vendid = int.Parse(VendorID.Text);
+                //int vendid = int.Parse(VendorID.Text);
                 string city = City.Text;
                 string state = State.Text;
                 string zipcode = ZipCode.Text;

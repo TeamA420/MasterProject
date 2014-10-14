@@ -5,21 +5,21 @@
     <table class="table">
         <tr>
             <td>Company Name:
-            <asp:TextBox ID="CompanyName" runat="server" CssClass="form-control">
+            <asp:TextBox ID="CompanyName" runat="server" MaxLength="100" CssClass="form-control">
             </asp:TextBox>
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="CompanyName"
                  CssClass="text-danger" ErrorMessage="The company name field is required." />
             </td>
         </tr>
 
-        <tr>
+<%--        <tr>
             <td>VendorID:
             <asp:TextBox ID="VendorID" runat="server" CssClass="form-control">
             </asp:TextBox>
             <asp:RequiredFieldValidator ID="ValidVend" runat="server" ControlToValidate="VendorID"
                  CssClass="text-danger" ErrorMessage="The Vendor ID field is required." />
             </td>
-        </tr>
+        </tr>--%>
 
     <%--    <tr>
             <td>
@@ -32,23 +32,24 @@
         
          <tr>
             <td>Phone Number:
-            <asp:TextBox ID="PhoneNumber" runat="server" CssClass="form-control">
+            <asp:TextBox ID="PhoneNumber" runat="server" MaxLength="18" CssClass="form-control">
             </asp:TextBox>
             <asp:RequiredFieldValidator runat="server" ControlToValidate="PhoneNumber"
             CssClass="text-danger" ErrorMessage="The phone number field is required." />
+            <%--<asp:RegularExpressionValidator ID="phonevalid" runat="server" ErrorMessage="Phone Number is not valid" ControlToValidate="PhoneNumber" ForeColor="Red" ValidationExpression="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}" />--%>
             </td>
         </tr>
 
          <tr>
             <td>Fax Number:
-            <asp:TextBox ID="Fax" runat="server" CssClass="form-control">
+            <asp:TextBox ID="Fax" runat="server" MaxLength="10" CssClass="form-control">
             </asp:TextBox>
             </td>
         </tr>
 
          <tr>
             <td>Physical Address
-            <asp:TextBox ID="PAddress" runat="server" CssClass="form-control">
+            <asp:TextBox ID="PAddress" runat="server" MaxLength="75" CssClass="form-control">
             </asp:TextBox>
             <asp:RequiredFieldValidator runat="server" ControlToValidate="PAddress"
             CssClass="text-danger" ErrorMessage="The address field is required." />
@@ -57,14 +58,14 @@
 
          <tr>
             <td>Billing Address:
-            <asp:TextBox ID="BAddress" runat="server" CssClass="form-control">
+            <asp:TextBox ID="BAddress" runat="server" MaxLength="75" CssClass="form-control">
             </asp:TextBox>
             </td>
         </tr>
 
          <tr>
             <td>City:
-            <asp:TextBox ID="City" runat="server" CssClass="form-control">
+            <asp:TextBox ID="City" runat="server" MaxLength="30" CssClass="form-control">
             </asp:TextBox>
             <asp:RequiredFieldValidator runat="server" ControlToValidate="City"
             CssClass="text-danger" ErrorMessage="The City field is required." />
@@ -83,7 +84,7 @@
         
          <tr>
             <td>Zip Code
-            <asp:TextBox ID="ZipCode" runat="server" CssClass="form-control">
+            <asp:TextBox ID="ZipCode" runat="server" MaxLength="5" CssClass="form-control">
             </asp:TextBox>
             <asp:RequiredFieldValidator runat="server" ControlToValidate="ZipCode"
             CssClass="text-danger" ErrorMessage="The Zip Code field is required." />
@@ -93,7 +94,7 @@
         
          <tr>
             <td>TaxID:
-            <asp:TextBox ID="TaxID" runat="server" CssClass="form-control">
+            <asp:TextBox ID="TaxID" runat="server" MaxLength="15" CssClass="form-control">
             </asp:TextBox>
             <asp:RequiredFieldValidator ID="ValidTaxID" runat="server" ControlToValidate="TaxID"
             CssClass="text-danger" ErrorMessage="The TaxId field is required." />
@@ -103,7 +104,7 @@
 
            <tr>
             <td>Email:
-            <asp:TextBox ID="Email" runat="server" CssClass="form-control">
+            <asp:TextBox ID="Email" runat="server" MaxLength="75" CssClass="form-control">
             </asp:TextBox>
             <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
             CssClass="text-danger" ErrorMessage="The email field is required." />
@@ -114,7 +115,7 @@
 
         <tr>
             <td>Secondary Email:
-            <asp:TextBox ID="EmailSec" runat="server" CssClass="form-control">
+            <asp:TextBox ID="EmailSec" runat="server" MaxLength="75" CssClass="form-control">
             </asp:TextBox>
             <asp:RequiredFieldValidator runat="server" ControlToValidate="EmailSec"
             CssClass="text-danger" ErrorMessage="The Secondary Email field is required." />
@@ -158,7 +159,7 @@
 
            <tr>
                <td>Password:
-               <asp:TextBox ID="Password" TextMode="Password" runat="server" CssClass="form-control">
+               <asp:TextBox ID="Password" TextMode="Password" MaxLength="20" runat="server" CssClass="form-control">
                </asp:TextBox>
                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Password"
                     CssClass="text-danger" ErrorMessage="The password field is required." />
@@ -167,7 +168,7 @@
 
            <tr>
                <td>Confirm Password:
-                   <asp:TextBox TextMode="Password" ID="ConPassword" runat="server" CssClass="form-control">
+                   <asp:TextBox TextMode="Password" MaxLength="20" ID="ConPassword" runat="server" CssClass="form-control">
                    </asp:TextBox>
                    <asp:RequiredFieldValidator runat="server" ControlToValidate="ConPassword"
                     CssClass="text-danger" Display="Dynamic" ErrorMessage="The confirm password field is required." />
